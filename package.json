@@ -1,0 +1,20 @@
+{
+  "name": "voice-recognition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genebit/voice-recognition.git"
+  },
+  "keywords": [],
+  "author": "genebit <genebitara@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/genebit/voice-recognition/issues"
+  },
+  "homepage": "https://github.com/genebit/voice-recognition#readme"
+}
