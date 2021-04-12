@@ -6,12 +6,13 @@ recognition.continuous = true;
 
 let startButton = document.getElementById('start-button');
 let stopButton = document.getElementById('stop-button');
+let status = document.getElementById('status');
 
 startButton.onclick = function() {
-     console.log("Listening...");
+     status.innerHTML = "Status: Listening";
      recognition.start();
 }
 stopButton.onclick = function() {
-     console.log("Recording Stopped.");
+     status.innerHTML = "Status: Stopped Listening";
      recognition.stop();
 }
