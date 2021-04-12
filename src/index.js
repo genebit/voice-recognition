@@ -1,15 +1,17 @@
 
-var startButton = document.getElementsByClassName('start-button');
-var stopButton = document.getElementsByClassName('stop-button');
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
 
+const recognition = new SpeechRecognition();
+recognition.continuous = true;
 
-startButton.onclick = sayHello();
+let startButton = document.getElementById('start-button');
+let stopButton = document.getElementById('stop-button');
 
-function sayHello() {
-     console.log('Hello!');
+startButton.onclick = function() {
+     console.log("Listening...");
+     recognition.start();
 }
-console.log(startButton);
-
-// stopButton.onclick = function() {
-//      console.log("You clicked stop button");
-// }
+stopButton.onclick = function() {
+     console.log("Recording Stopped.");
+     recognition.stop();
+}

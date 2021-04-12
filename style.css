@@ -1,21 +1,32 @@
+@font-face {
+     font-family: Roboto;
+     src: url(fonts/RobotoMono-Medium.ttf);
+}
+
 * {
      background: rgb(32, 32, 32);
-     font-family: sans-serif;
+     font-family: Roboto;
 }
 
 h1 {
+     color: rgb(38, 136, 161);
      margin-top: 100px;
      margin-left: 100px;
-     margin-right: 100px;
+     margin-right: 100px;     
      margin-bottom: 50px;
      font-size: 80px;
 }
 
+h2 {
+     color: white;
+     margin-left: 100px;
+     font-size: 30px;
+}
 button {
      background-color: white;
      color: black;
      border: none;
-     border-radius: 15px;
+     border-radius: 50px;
 
      margin-left: 100px;
 
