@@ -16,5 +16,6 @@ stopButton.onclick = function () {
      recognition.stop();
 }
 recognition.onresult = function (event) {
-     var result = event.results[0][0].transcript;
+     var output = event.results[0][0].transcript;
+     console.log(output);
 };
