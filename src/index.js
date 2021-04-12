@@ -2,6 +2,7 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 
 const recognition = new SpeechRecognition();
 recognition.continuous = true;
+recognition.lang = 'en-US';
 
 let startButton = document.getElementById('start-button');
 let stopButton = document.getElementById('stop-button');
